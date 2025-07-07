@@ -1,4 +1,3 @@
-# pipeline_migrator/migrate.py
 import yaml
 
 def load_azure_pipeline(path):
@@ -37,3 +36,4 @@ def convert_to_github_actions(azure_pipeline):
 def save_github_workflow(github_workflow, output_path):
     with open(output_path, 'w') as f:
         yaml.dump(github_workflow, f, sort_keys=False)
+
