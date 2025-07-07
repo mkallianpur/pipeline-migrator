@@ -1,0 +1,16 @@
+name: Azure DevOps Pipeline Example
+trigger:
+  - main
+stages:
+  - stage: Build
+    jobs:
+      - job: BuildJob
+        steps:
+          - script: echo Building the app
+            displayName: 'Run build'
+  - stage: Deploy
+    jobs:
+      - job: DeployJob
+        steps:
+          - script: echo Deploying to production
+            displayName: 'Run deploy'
