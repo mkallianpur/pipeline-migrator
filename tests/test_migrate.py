@@ -1,7 +1,6 @@
 import pytest
 from pipeline_migrator import migrate
 
-
 def test_convert_to_github_actions():
     azure_yaml = {
         "name": "Test Pipeline",
